@@ -11,6 +11,10 @@ yarn create react-app styling-react --typescript
 yarn add node-sass
 ```
 
+And renamed `src/App.css` to `src/App.module.scss`. Also modified the scss file to use camelCase naming.
+
+`src/App.module.scss.d.ts` were added to support auto-completion of VSCODE.
+
 Good luck!
 
 ---
