@@ -1,3 +1,20 @@
+# React + Typescript + Sass + CSS Modules
+
+From `create-react-app` [v2.0](https://reactjs.org/blog/2018/10/01/create-react-app-v2.html), `Sass` and `Css Modules` does not need `yarn eject`.
+
+This very simple repository shows how to use react with (Typescript + Sass + Css Moudles).
+
+Below are commands I've typed to create this repository.
+
+```
+yarn create react-app styling-react --typescript
+yarn add node-sass
+```
+
+Good luck!
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
