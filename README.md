@@ -1,4 +1,4 @@
-# React + Typescript + Sass + CSS Modules
+# React + Typescript + Sass + CSS Modules + classnames
 
 From `create-react-app` [v2.0](https://reactjs.org/blog/2018/10/01/create-react-app-v2.html), `Sass` and `Css Modules` does not need `yarn eject`.
 
@@ -9,11 +9,20 @@ Below are commands I've typed to create this repository.
 ```
 yarn create react-app styling-react --typescript
 yarn add node-sass
+yarn add classnames
+yarn add @types/classnames
 ```
 
 And renamed `src/App.css` to `src/App.module.scss`. Also modified the scss file to use camelCase naming.
 
 `src/App.module.scss.d.ts` were added to support auto-completion of VSCODE.
+
+The `classnames` is applied to here to change color of link text:
+
+```typescript
+// src/App.tsx:16
+className={classNames(styles.AppLink, styles.Blue)}
+```
 
 Good luck!
 
