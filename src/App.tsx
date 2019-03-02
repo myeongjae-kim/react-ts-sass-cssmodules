@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import styles from './App.module.scss';
-import classNames from 'classnames'
+import classNames from 'classnames/bind'
+
+const cx = classNames.bind(styles);
 
 class App extends Component {
   render() {
@@ -9,11 +11,11 @@ class App extends Component {
       <div className={styles.App}>
         <header className={styles.AppHeader}>
           <img src={logo} className={styles.AppLogo} alt="logo" />
-          <p>
+          <p className={cx('Blue', 'Bold')}>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
           <a
-            className={classNames(styles.AppLink, styles.Blue)}
+            className={styles.AppLink}
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"

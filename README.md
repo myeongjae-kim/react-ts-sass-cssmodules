@@ -20,8 +20,8 @@ And renamed `src/App.css` to `src/App.module.scss`. Also modified the scss file 
 The `classnames` is applied to here to change color of link text:
 
 ```typescript
-// src/App.tsx:16
-className={classNames(styles.AppLink, styles.Blue)}
+// src/App.tsx:14
+<p className={cx('Blue', 'Bold')}>
 ```
 
 Good luck!
